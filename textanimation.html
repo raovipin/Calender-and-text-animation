@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Text Animation</title>
+      
+    <style>
+        body {
+            background: rgb(1, 3, 1);
+        }
+  
+      
+  
+        span::before {
+            content: "LIFESTYLE";
+            /* background-color: turquoise; */
+            animation: animate infinite 5s;
+            padding-left: 10px;
+            color: white;
+           
+         
+                }
+                span{
+                    background-color: black;
+                    animation: bgcolor infinite 3s ;
+                }
+                @keyframes bgcolor{
+                
+                    0%{
+                        background-color: turquoise;
+                    }
+                    50%{background-color:goldenrod;
+                      
+                    }
+                    75%{
+                        background-color:green ;
+                    }
+                    100%{
+                        background-color: turquoise;
+                    }
+                }
+
+  
+        @keyframes animate {
+            
+  
+            0% {
+                content: "LIFESTYLE";
+                
+            }
+  
+            50% {
+                content: "WORK";
+            }
+  
+            75% {
+                content: "EVERYTHING";
+            }
+        }
+        .heading{
+            font-size: 350%;
+            font-weight: 800;
+
+        }
+        .animation{
+            border:0.5em solid white;
+            width: max-content;
+            height: max-content;
+            margin:10em auto;
+
+        }
+        .animation>#ding{
+            font-size: 350%;
+            color: rgb(205, 21, 21);
+            text-shadow: 2px 2px 2px blue;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.3em;
+            padding: 0.2em 4em;
+        }
+        .animation>#ing{
+            text-shadow: 2px 2px 2px rgb(255, 0, 166);
+            padding: 0.2em 4em;
+            font-size: 350%;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.3em;
+        }
+       .animation>#ng{
+        text-shadow: 2px 2px 2px blue;
+        font-size: 350%;
+            padding: 0.2em 4em;
+            color: rgb(205, 21, 21);
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+        }
+        
+    </style>
+</head>
+  
+<body>
+<div class="animation">
+
+  
+
+        <div id="ding">MAKE</div>
+        <div id="ing"><span></span></div>
+        <div id="ng">AWESOME!!</div>
+  
+</div>
+</body>
+  
+</html>
